@@ -5,26 +5,19 @@ import (
 	"testing"
 )
 
-type TestDataStruct struct {
-	TestData int
-	Want     bool
-}
-
 func TestIsPalindrome(t *testing.T) {
 	test := GetTestData()
 	for i := range test {
 		t.Run("Round", func(t *testing.T) {
-			p := pkgu.NewPerf()
-			if isPalindrome(test[i].TestData) != test[i].Want {
+			if isPalindrome(test[i].TestData.(int)) != test[i].Want.(bool) {
 				t.Error("Want != Got")
 			}
-			t.Log("Perf:", p.Ns())
 		})
 	}
 }
 
-func GetTestData() []TestDataStruct {
-	return []TestDataStruct{
+func GetTestData() []pkgu.TestDataStruct {
+	return []pkgu.TestDataStruct{
 		{
 			TestData: 111,
 			Want:     true,
