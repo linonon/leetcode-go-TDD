@@ -22,7 +22,13 @@ func GetTestData() []pkgu.TestListNodeStruct {
 	return []pkgu.TestListNodeStruct{
 		{
 			Num:       1,
-			ListNode1: pkgu.IntSliceToListNode([]int{1, 2, 3, 4}),
+			ListNode1: pkgu.IntSliceToListNode([]int{1, 2, 4}),
+			ListNode2: pkgu.IntSliceToListNode([]int{1, 3, 4}),
+		},
+		{
+			Num:       2,
+			ListNode1: pkgu.IntSliceToListNode([]int{}),
+			ListNode2: pkgu.IntSliceToListNode([]int{}),
 		},
 	}
 }

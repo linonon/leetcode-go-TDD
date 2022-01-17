@@ -19,9 +19,13 @@ import (
  * }
  */
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+	if list1 == nil || list2 == nil {
+		return nil
+	}
+
 	var x1, x2 *ListNode
-	for {
-		x1 = list1
+	x1 = list1
+	for i := 0; i < 20; i++ {
 		fmt.Println("x1.Val:", x1.Val)
 		if x1.Next != nil {
 			x1 = x1.Next
