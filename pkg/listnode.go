@@ -1,7 +1,5 @@
 package pkgu
 
-import "fmt"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -13,11 +11,12 @@ func IntSliceToListNode(s []int) *ListNode {
 	}
 
 	l1 := &ListNode{Val: s[0], Next: nil}
+	result := l1
 	for i := 1; i < len(s); i++ {
 		l2 := &ListNode{Val: s[i], Next: nil}
 		l1.Next = l2
-		fmt.Println("fmt:", l1.Val)
+		l1 = l1.Next
 	}
 
-	return l1
+	return result
 }
