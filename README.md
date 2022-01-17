@@ -1,6 +1,10 @@
 # leetcode-go-linonon
 每天慢慢刷，看看能刷多久、刷多少。
 `不要急，最重要是快。`
+## 第二週
+
+### 2022.01.17
+- [20.有效的括號](code/string/0020-isValidKuoHao/README.md)
 
 ## 第一週
 
