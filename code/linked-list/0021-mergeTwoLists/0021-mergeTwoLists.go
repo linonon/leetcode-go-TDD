@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	. "leetcode/pkg"
 )
 
@@ -18,27 +17,20 @@ import (
  *     Next *ListNode
  * }
  */
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
-	if list1 == nil || list2 == nil {
-		return nil
+func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil {
+		return l2
 	}
-
-	var x1, x2 *ListNode
-	x1 = list1
-	for i := 0; i < 20; i++ {
-		fmt.Println("x1.Val:", x1.Val)
-		if x1.Next != nil {
-			x1 = x1.Next
-		} else {
-			break
-		}
+	if l2 == nil {
+		return l1
 	}
-
-	for x2 = list2; x2 != nil; x2 = x2.Next {
-		fmt.Println(x2.Val)
+	if l1.Val < l2.Val {
+		l1.Next = mergeTwoLists(l1.Next, l2)
+		return l1
+	} else {
+		l2.Next = mergeTwoLists(l1, l2.Next)
+		return l2
 	}
-
-	return list1
 }
 
 // @lc code=end
