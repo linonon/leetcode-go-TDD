@@ -2,6 +2,8 @@
 每天慢慢刷，看看能刷多久、刷多少。
 `不要急，最重要是快。`
 ## 第二週
+### 2022.01.18
+- [21.連結兩個 List](/code/linked-list/0021-mergeTwoLists/README.md)
 
 ### 2022.01.17
 - [20.有效的括號](code/string/0020-isValidKuoHao/README.md)

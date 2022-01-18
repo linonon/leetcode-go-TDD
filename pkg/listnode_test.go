@@ -11,7 +11,7 @@ func TestNodesPrint(t *testing.T) {
 	for i := range test {
 		str := fmt.Sprintf("Round-%v", test[i].Num)
 		t.Run(str, func(t *testing.T) {
-			test[i].ListNode1.Print()
+			fmt.Println(test[i].ListNode1.String())
 		})
 	}
 }
