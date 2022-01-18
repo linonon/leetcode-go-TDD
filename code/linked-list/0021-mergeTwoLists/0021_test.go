@@ -17,10 +17,8 @@ func Test0021(t *testing.T) {
 
 			if !got.IsEqual(want) {
 				t.Error("got is not equal to want")
-				fmt.Println("Got:")
-				got.Print()
-				fmt.Println("Want:")
-				want.Print()
+				fmt.Printf("Got:\t\t%v\n", got.String())
+				fmt.Printf("Want:\t\t%v\n", want.String())
 			}
 
 			t.Logf("\nPass\n")

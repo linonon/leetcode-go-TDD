@@ -10,19 +10,22 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func (n *ListNode) Print() {
+func (n *ListNode) String() string {
 	if n == nil {
-		fmt.Println("node == nil")
+		return "node == nil"
 	}
 
+	var str = ""
 	for x, i := n, 0; x != nil && i < 20; x = x.Next {
 		if x.Next != nil {
-			fmt.Printf(" %v ->", x.Val)
+			str += fmt.Sprintf(" %v ->", x.Val)
 		} else {
-			fmt.Printf(" %v\n", x.Val)
+			str += fmt.Sprintf(" %v", x.Val)
 		}
 		i++
 	}
+
+	return str
 }
 
 func (n *ListNode) IsEqual(other *ListNode) bool {
