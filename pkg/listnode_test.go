@@ -8,24 +8,22 @@ import (
 var test = GetTestData()
 
 func TestNodesPrint(t *testing.T) {
-	for i := range test {
-		str := fmt.Sprintf("Round-%v", test[i].Num)
-		t.Run(str, func(t *testing.T) {
-			fmt.Println(test[i].Value1.(*ListNode).String())
+	for _, v := range test {
+		TestRun(t, v.Num, func(t *testing.T) {
+			fmt.Println(v.Value1.(*ListNode))
 		})
 	}
 }
-func TestNodesLength(t *testing.T) {
-	for i := range test {
-		str := fmt.Sprintf("Round-%v", test[i].Num)
-		t.Run(str, func(t *testing.T) {
 
-			length, err := test[i].Value1.(*ListNode).Length()
+func TestNodesLength(t *testing.T) {
+	for _, v := range test {
+		TestRun(t, v.Num, func(t *testing.T) {
+
+			length, err := v.Value1.(*ListNode).Length()
 			if err != nil {
-				fmt.Println(err)
+				fmt.Printf("Err: %+v\n", err)
 				return
 			}
-
 			fmt.Println("len(node) ==", length)
 		})
 	}

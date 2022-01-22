@@ -8,17 +8,16 @@ import (
 
 func Test0021(t *testing.T) {
 	test := GetTestData()
-	for i := range test {
-		str := fmt.Sprintf("Round-%v", test[i].Num)
-		t.Run(str, func(t *testing.T) {
+	for _, v := range test {
+		TestRun(t, v.Num, func(t *testing.T) {
 
-			got := mergeTwoLists(test[i].Value1.(*ListNode), test[i].Value2.(*ListNode))
-			want := test[i].Want
+			got := mergeTwoLists(v.Value1.(*ListNode), v.Value2.(*ListNode))
+			want := v.Want.(*ListNode)
 
-			if !got.IsEqual(want.(*ListNode)) {
+			if !got.IsEqual(want) {
 				t.Error("got is not equal to want")
-				fmt.Printf("Got:\t\t%v\n", got.String())
-				fmt.Printf("Want:\t\t%v\n", want.(*ListNode).String())
+				fmt.Printf("Got:\t\t%v\n", got)
+				fmt.Printf("Want:\t\t%v\n", want)
 			}
 
 			t.Logf("\nPass\n")

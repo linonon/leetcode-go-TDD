@@ -1,21 +1,21 @@
 package leetcode
 
 import (
-	"fmt"
 	. "leetcode/pkg"
 	"testing"
 )
 
 func TestAddTwoNumbers(t *testing.T) {
-	test := GetTestData()
-	for _, v := range test {
-		str := fmt.Sprintf("Test %v", v.Num)
-		t.Run(str, func(t *testing.T) {
+	for _, v := range GetTestData() {
+		TestRun(t, v.Num, func(t *testing.T) {
+
 			got := addTwoNumbers(v.Value1.(*ListNode), v.Value2.(*ListNode))
-			want := v.Want
-			if ok := got.IsEqual(want.(*ListNode)); !ok {
-				t.Errorf("addTwoNumbers: got %v, want %v\n", got.String(), want.(*ListNode).String())
+			want := v.Want.(*ListNode)
+
+			if !got.IsEqual(want) {
+				t.Errorf("addTwoNumbers: got %v, want %v\n", got, want)
 			}
+
 		})
 	}
 }

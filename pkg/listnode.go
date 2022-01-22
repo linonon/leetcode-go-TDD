@@ -1,8 +1,9 @@
 package pkgu
 
 import (
-	"errors"
 	"fmt"
+
+	"github.com/pkg/errors"
 )
 
 type ListNode struct {
