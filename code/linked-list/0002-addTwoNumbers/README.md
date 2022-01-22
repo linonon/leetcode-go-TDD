@@ -7,7 +7,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var tmp = &ListNode{}
 	result := tmp
 
-	// 這裡處理沒有 {9} + {9} = {8,1} 的情況
+	// 這裡處理沒有 {9} + {9} = {8,1} 的情況，后面处理
 	for l1 != nil && l2 != nil {
 
 		sum := tmp.Val + l1.Val + l2.Val

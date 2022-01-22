@@ -6,8 +6,9 @@ type T struct {
 	Num  int
 	Text string
 
-	Value interface{}
-	Want  interface{}
+	Value  interface{}
+	Target int
+	Want   interface{}
 
 	Value1 interface{}
 	Value2 interface{}

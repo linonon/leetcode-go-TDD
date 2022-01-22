@@ -7,6 +7,9 @@ import (
 
 func TestRun(t *testing.T, flag interface{}, fn func(t *testing.T)) {
 	var str string
+	if flag == nil {
+		str = "Round"
+	}
 
 	num, ok := flag.(int)
 	if ok {
