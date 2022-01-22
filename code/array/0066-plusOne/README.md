@@ -39,7 +39,7 @@ func plusOne(digits []int) []int {
 這個方法不行：當 len([]int) >> int64 時，就會出錯。
 
 ## Version2
-
+用Recrusion的方法做，完美過關
 ```go
 func plusOne(digits []int) []int {
 	tPlusOne(digits)
@@ -60,8 +60,6 @@ func tPlusOne(digits []int) {
 	}
 }
 ```
-
-用Recrusion的方法做，完美過關
 
 ## Version "Most Vote"
 
