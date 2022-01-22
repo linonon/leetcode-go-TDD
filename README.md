@@ -7,7 +7,7 @@
     - Hard: 0
 ## 第二週
 ### 2022.01.22 週六 天氣: :umbrella: 
-       #### Medium
+#### Medium
 - [2.兩數之和 List](/code/linked-list/0002-addTwoNumbers/README.md) 
 #### Easy
 - [26.刪除重複元素](/code/array/0026-removeDuplicates/README.md)
