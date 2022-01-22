@@ -1,9 +1,11 @@
 package pkgu
 
 type TestDataStruct struct {
-	Num      int
-	TestData interface{}
-	Want     interface{}
+	Num       int
+	TestData  interface{}
+	TestData2 interface{}
+	Want      interface{}
+	Want2     interface{}
 }
 
 type TestListNodeStruct struct {
