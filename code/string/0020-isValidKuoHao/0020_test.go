@@ -10,8 +10,8 @@ func TestIsValidKuoHao(t *testing.T) {
 	test := GetTestData()
 	for _, v := range test {
 		t.Run(strconv.Itoa(v.Num), func(t *testing.T) {
-			got := isValid(v.TestData.(string))
-			want := v.Want.(bool)
+			got := isValid(v.Value1.(string))
+			want := v.Want1.(bool)
 
 			if got != want {
 				t.Errorf("got: %v, want: %v", got, want)
@@ -21,42 +21,42 @@ func TestIsValidKuoHao(t *testing.T) {
 
 }
 
-func GetTestData() []pkgu.TestDataStruct {
-	return []pkgu.TestDataStruct{
+func GetTestData() []pkgu.T {
+	return []pkgu.T{
 		{
 			Num:      1,
-			TestData: "()",
-			Want:     true,
+			Value1: "()",
+			Want1:     true,
 		},
 		{
 			Num:      2,
-			TestData: "(){}[]",
-			Want:     true,
+			Value1: "(){}[]",
+			Want1:     true,
 		},
 		{
 			Num:      3,
-			TestData: "({})",
-			Want:     true,
+			Value1: "({})",
+			Want1:     true,
 		},
 		{
 			Num:      4,
-			TestData: "({)}",
-			Want:     false,
+			Value1: "({)}",
+			Want1:     false,
 		},
 		{
 			Num:      5,
-			TestData: "[",
-			Want:     false,
+			Value1: "[",
+			Want1:     false,
 		},
 		{
 			Num:      6,
-			TestData: "]",
-			Want:     false,
+			Value1: "]",
+			Want1:     false,
 		},
 		{
 			Num:      7,
-			TestData: "]]",
-			Want:     false,
+			Value1: "]]",
+			Want1:     false,
 		},
 	}
 }

@@ -9,38 +9,38 @@ func TestIsPalindrome(t *testing.T) {
 	test := GetTestData()
 	for i := range test {
 		t.Run("Round", func(t *testing.T) {
-			if isPalindrome(test[i].TestData.(int)) != test[i].Want.(bool) {
+			if isPalindrome(test[i].Value1.(int)) != test[i].Want1.(bool) {
 				t.Error("Want != Got")
 			}
 		})
 	}
 }
 
-func GetTestData() []pkgu.TestDataStruct {
-	return []pkgu.TestDataStruct{
+func GetTestData() []pkgu.T {
+	return []pkgu.T{
 		{
-			TestData: 111,
-			Want:     true,
+			Value1: 111,
+			Want1:     true,
 		},
 		{
-			TestData: 121,
-			Want:     true,
+			Value1: 121,
+			Want1:     true,
 		},
 		{
-			TestData: 1221,
-			Want:     true,
+			Value1: 1221,
+			Want1:     true,
 		},
 		{
-			TestData: 1271,
-			Want:     false,
+			Value1: 1271,
+			Want1:     false,
 		},
 		{
-			TestData: 123234028304928321,
-			Want:     false,
+			Value1: 123234028304928321,
+			Want1:     false,
 		},
 		{
-			TestData: 1111111111111111111,
-			Want:     true,
+			Value1: 1111111111111111111,
+			Want1:     true,
 		},
 	}
 }

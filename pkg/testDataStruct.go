@@ -2,14 +2,6 @@ package pkgu
 
 import "fmt"
 
-type TestDataStruct struct {
-	Num       int
-	TestData  interface{}
-	TestData2 interface{}
-	Want      interface{}
-	Want2     interface{}
-}
-
 type T struct {
 	Num  int
 	Text string
