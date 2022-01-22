@@ -25,13 +25,3 @@ func (t *T) GetNumName() string {
 func (t *T) GetTextName() string {
 	return fmt.Sprintf("Test %v", t.Text)
 }
-
-type TestListNodeStruct struct {
-	Num int
-
-	ListNode1 *ListNode
-	ListNode2 *ListNode
-	ListNode3 *ListNode
-
-	Want *ListNode
-}
