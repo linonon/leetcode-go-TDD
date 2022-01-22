@@ -1,4 +1,4 @@
-# 删除有序数组中的重复项
+# 26.删除有序数组中的重复项
 
 ## Version 1
 Easy, But Slowly

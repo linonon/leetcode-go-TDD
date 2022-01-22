@@ -5,6 +5,8 @@
 
 ### 2022.01.22 週六 天氣: :umbrella:
 - [2.兩數之和 List](/code/linked-list/0002-addTwoNumbers/README.md)
+- [26.刪除重複元素](/code/array/0026-removeDuplicates/README.md)
+- [27.刪除元素](code/array/0027-removeElement/README.md)
 
 ### 2022.01.18
 - [21.連結兩個 List](/code/linked-list/0021-mergeTwoLists/README.md)
