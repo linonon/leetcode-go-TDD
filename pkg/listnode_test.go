@@ -35,13 +35,13 @@ func GetTestData() []TestListNodeStruct {
 	return []TestListNodeStruct{
 		{
 			Num:       1,
-			ListNode1: Node([]int{1, 2, 4}),
-			ListNode2: Node([]int{1, 3, 4}),
+			ListNode1: ToNode([]int{1, 2, 4}),
+			ListNode2: ToNode([]int{1, 3, 4}),
 		},
 		{
 			Num:       2,
-			ListNode1: Node([]int{}),
-			ListNode2: Node([]int{}),
+			ListNode1: ToNode([]int{}),
+			ListNode2: ToNode([]int{}),
 		},
 		{
 			Num:       3,
@@ -49,7 +49,7 @@ func GetTestData() []TestListNodeStruct {
 		},
 		{
 			Num:       4,
-			ListNode1: Node([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}),
+			ListNode1: ToNode([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}),
 		},
 	}
 }

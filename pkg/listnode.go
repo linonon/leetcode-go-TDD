@@ -62,7 +62,7 @@ func (n *ListNode) Length() (int, error) {
 	return result, nil
 }
 
-func Node(s []int) *ListNode {
+func ToNode(s []int) *ListNode {
 	if len(s) == 0 {
 		return nil
 	}

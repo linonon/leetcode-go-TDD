@@ -2,6 +2,10 @@
 每天慢慢刷，看看能刷多久、刷多少。
 `不要急，最重要是快。`
 ## 第二週
+
+### 2022.01.22 週六 天氣: :umbrella:
+- [2.兩數之和 List](/code/linked-list/0002-addTwoNumbers/README.md)
+
 ### 2022.01.18
 - [21.連結兩個 List](/code/linked-list/0021-mergeTwoLists/README.md)
 

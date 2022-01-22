@@ -38,7 +38,7 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 			if x1.Next.Next == nil {
 				x1.Next.Next = x2.Next
 				break
-			}
+			}			
 
             // 更新需要對比點節點位置
             // x1 {1, 1, 2, 4}
