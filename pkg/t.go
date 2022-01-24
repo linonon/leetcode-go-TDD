@@ -22,12 +22,14 @@ type T struct {
 }
 
 // Testing name
-func (t *T) GetNumName() string {
-	return fmt.Sprintf("Test %v", t.Num)
-}
+func (t *T) TestName() string {
+	if t.Num != 0 {
+		return fmt.Sprintf("Test %v", t.Num)
+	} else if t.Text != "" {
+		return fmt.Sprintf("Test %v", t.Text)
+	}
 
-func (t *T) GetTextName() string {
-	return fmt.Sprintf("Test %v", t.Text)
+	return "dosen't set num or text"
 }
 
 // SetM setting muti interface{} value, return []interface{}

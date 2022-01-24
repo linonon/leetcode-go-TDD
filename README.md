@@ -5,8 +5,12 @@
     - Easy: 9
     - Medium: 1
     - Hard: 0
+## 第三週
+### 2022.01.24 週一 :cloud:
+#### Easy
+- [28.實現 strStr()](/code/string/0028-strStr/README.md)
 ## 第二週
-### 2022.01.22 週六 天氣: :umbrella: 
+### 2022.01.22 週六 :cloud_with_rain:
 #### Medium
 - [2.兩數之和 List](/code/linked-list/0002-addTwoNumbers/README.md) 
 #### Easy
