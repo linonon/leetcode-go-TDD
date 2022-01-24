@@ -9,8 +9,8 @@ func TestLongestCommonPrefix(t *testing.T) {
 	test := GetTestData()
 	for i := range test {
 		t.Run("Round", func(t *testing.T) {
-			got := longestCommonPrefix(test[i].Value1.([]string))
-			want := test[i].Want1.(string)
+			got := longestCommonPrefix(test[i].Val1.([]string))
+			want := test[i].Want.(string)
 
 			if got != want {
 				t.Errorf("got %s, want %s", got, want)
@@ -23,16 +23,16 @@ func TestLongestCommonPrefix(t *testing.T) {
 func GetTestData() []pkgu.T {
 	return []pkgu.T{
 		{
-			Value1: []string{"flower", "flow", "flight"},
-			Want1:     "fl",
+			Val1: []string{"flower", "flow", "flight"},
+			Want:     "fl",
 		},
 		{
-			Value1: []string{"dog", "racecar", "car"},
-			Want1:     "",
+			Val1: []string{"dog", "racecar", "car"},
+			Want:     "",
 		},
 		{
-			Value1: []string{"dogggg", "dog", "do"},
-			Want1:     "do",
+			Val1: []string{"dogggg", "dog", "do"},
+			Want:     "do",
 		},
 	}
 
