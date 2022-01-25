@@ -8,30 +8,18 @@ package leetcode
 
 // @lc code=start
 func maxSubArray(nums []int) int {
-	if len(nums) == 1 {
-		return nums[0]
+	max := nums[0]
+	for i := 1; i < len(nums); i++ {
+		if nums[i-1]+nums[i] > nums[i] {
+			nums[i] += nums[i-1]
+		}
+
+		if max < nums[i] {
+			max = nums[i]
+		}
 	}
 
-	var x = 0
-	for i := range nums {
-		x += nums[i]
-	}
-
-	n1 := nums[:len(nums)-1]
-	n2 := nums[1:]
-
-	msa1 := maxSubArray(n1)
-	msa2 := maxSubArray(n2)
-
-	if x > msa1 && x > msa2 {
-		return x
-	}
-
-	if msa1 > msa2 {
-		return msa1
-	}
-
-	return msa2
+	return max
 }
 
 // @lc code=end
