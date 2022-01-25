@@ -16,7 +16,9 @@ func lengthOfLongestSubstring(s string) int {
 	var result int
 	// flag 用來調整 j，區間 [j：i] 是滑動窗口
 	flag := 0
+	// 用來記錄當前最長的無重複字符串
 	tmp := make([]byte, 1)
+
 	for i := 1; i < len(s); i++ {
 		tmp[0] = s[0]
 		for j := flag; j < i; j++ {
@@ -27,13 +29,13 @@ func lengthOfLongestSubstring(s string) int {
 				flag = j + 1
 				j = i
 			}
-
-			// 判斷 result 是否是 max
-			if result < len(tmp) {
-				result = len(tmp)
-			}
 		}
-		// 類似初始化操作，Cap信息仍保存
+
+		// 判斷 result 是否是 max 值
+		if result < len(tmp) {
+			result = len(tmp)
+		}
+		// 類似初始化操作，Cap信息仍保存，減少內存開銷
 		tmp = tmp[0:1]
 	}
 
