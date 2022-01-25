@@ -2,7 +2,7 @@
 `没事做，就做做题咯`
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-    - Easy: 9
+    - Easy: 10 
     - Medium: 1
     - Hard: 0
 ## 第三週
