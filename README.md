@@ -2,7 +2,7 @@
 `没事做，就做做题咯`
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-    - Easy: 12 
+    - Easy: 13 
     - Medium: 2
     - Hard: 0
 ## 第三週
@@ -12,6 +12,7 @@
 
 - Easy
     - [1688.比賽匹配次數](/code/unknow/1688-numberOfMatches/README.md)
+    - [53.最大子数组和](/code/array/0053-maxSubArray/53.md)
 ### 2022.01.24 月 :cloud:
 - Easy
     - [28.實現 strStr()](/code/string/0028-strStr/README.md)
