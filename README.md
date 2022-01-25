@@ -3,12 +3,14 @@
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
     - Easy: 11 
-    - Medium: 1
+    - Medium: 2
     - Hard: 0
 ## 第三週
 ### 2022.01.25 火 :sunny:
+#### Medium
+- [3.無重複字符的最長子串](code/string/0003-lengthOfLongestSubstring/3.md)
 #### Easy
-- [1688.比賽匹配次數](/)
+- [1688.比賽匹配次數](/code/unknow/1688-numberOfMatches/README.md)
 ### 2022.01.24 月 :cloud:
 #### Easy
 - [28.實現 strStr()](/code/string/0028-strStr/README.md)
