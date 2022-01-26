@@ -32,16 +32,6 @@ func Test2013(t *testing.T) {
 
 					if result != want {
 						t.Errorf("want[%d]: %v: want: %d, result: %d\n", wantflag, point, want, result)
-						t.Logf("%v\n", ds.points)
-						// fmt.Println("x")
-						// for _, v := range ds.points {
-						// 	fmt.Println(v[0])
-						// }
-						// fmt.Println("y")
-						// for _, v := range ds.points {
-						// 	fmt.Println(v[1])
-						// }
-						t.FailNow()
 					}
 					wantflag++
 				}

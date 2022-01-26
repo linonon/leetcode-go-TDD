@@ -9,49 +9,52 @@ package leetcode
 // DetectSquares is a struct
 // @lc code=start
 type DetectSquares struct {
-	points [][]int
+	m map[int]map[int]int
+	// {(x,y): 出現次數}
+	//   key  <->   value
+	// map[x] <-> map[int]int
 }
 
 // Constructor likes New()
 func Constructor() DetectSquares {
-	points := make([][]int, 0)
-	return DetectSquares{points}
+	m := make(map[int]map[int]int)
+	return DetectSquares{m}
 }
 
 // Add point in x,y into coordinate system.
 func (ds *DetectSquares) Add(point []int) {
-	ds.points = append(ds.points, point)
+	x, y := point[0], point[1]
+	if ds.m[y] == nil {
+		ds.m[y] = map[int]int{}
+	}
+	ds.m[y][x]++
 }
 
-// Count how many ways to get a square
+// Count how many right square
+//	 ^
+//	 |    v(x,col)        v(x+d,col)
+//	 |    · ————————————— ·
+//	 |				^
+//	 |				|
+//	 |				d
+//	 |				|
+//	 |				v
+//	 |    · ————————————— ·
+//	 |    ^(x,y)          ^(x+d,y)
+//	 +———————————————————————————————>
 func (ds *DetectSquares) Count(point []int) int {
-	var absolute = func(a, b int) int {
-		if a >= b {
-			return a - b
-		}
-		return b - a
+	x, y := point[0], point[1]
+	var result int
+	if ds.m[y] == nil {
+		return 0
 	}
-	const x, y int = 0, 1
-	result := 0
-	for _, p1 := range ds.points {
-		// x Equal
-		if p1[x] == point[x] {
-			for _, p2 := range ds.points {
-				// y Equal
-				if p2[y] == point[y] {
-					tx := p2[x]
-					ty := p1[y]
-					if absolute(point[y], ty) != absolute(point[x], tx) {
-						continue
-					}
 
-					for k := 0; k < len(ds.points); k++ {
-						if ds.points[k][x] == tx && ds.points[k][y] == ty {
-							result++
-						}
-					}
-				}
-			}
+	yCnt := ds.m[y]
+	for col, colCnt := range ds.m {
+		if col != y {
+			d := col - y
+			result += colCnt[x] * colCnt[x+d] * yCnt[x+d]
+			result += colCnt[x] * colCnt[x-d] * yCnt[x-d]
 		}
 	}
 
