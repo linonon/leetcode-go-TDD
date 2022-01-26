@@ -1,10 +1,12 @@
 # leetcode-go-linonon
 `没事做，就做做题咯`
+
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
     - Easy: 13 
     - Medium: 2
     - Hard: 0
+
 ## 第三週
 
 ### 2022.01.25 火 :sun_behind_large_cloud:
@@ -14,13 +16,17 @@
 - Easy
     - [1688.比賽匹配次數](/code/unknow/1688-numberOfMatches/README.md)
     - [53.最大子数组和](/code/array/0053-maxSubArray/53.md)
+
 ### 2022.01.24 月 :cloud:
 - Easy
     - [28.實現 strStr()](/code/string/0028-strStr/README.md)
+
 ### 2022.01.23 日 :cloud:
 - Easy
     - [35.搜索插入位置](/code/array/0035-searchInsert/README.md)
+
 ## 第二週
+
 ### 2022.01.22 土:cloud_with_rain:
 - Medium
     - [2.兩數之和 List](/code/linked-list/0002-addTwoNumbers/README.md) 
