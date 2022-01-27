@@ -3,11 +3,16 @@
 
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-    - Easy: 13 
-    - Medium: 2
+    - Easy: 14 
+    - Medium: 3
     - Hard: 0
 
 ## 第三週
+
+### 2022.01.27 火 :sunny:
+
+- Easy
+    - [2047.句子中的有效单词数](/code/unknow/2047-countValidWords/2047.md)
 
 ### 2022.01.26 火 :sunny:
 
