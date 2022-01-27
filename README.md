@@ -3,7 +3,7 @@
 
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-    - Easy: 14 
+    - Easy: 15 
     - Medium: 3
     - Hard: 0
 
