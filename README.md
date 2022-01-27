@@ -9,12 +9,12 @@
 
 ## 第三週
 
-### 2022.01.27 火 :sunny:
+### 2022.01.27 木 :sunny:
 
 - Easy
     - [2047.句子中的有效单词数](/code/unknow/2047-countValidWords/2047.md)
 
-### 2022.01.26 火 :sunny:
+### 2022.01.26 水 :sunny:
 
 - Medium
     - [2013.檢測正方形](code/unknow/2013-DetectSquares/2013.md)
