@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1996 lang=golang
  *
@@ -8,5 +10,5 @@
 func numberOfWeakCharacters(properties [][]int) int {
 
 }
-// @lc code=end
 
+// @lc code=end
