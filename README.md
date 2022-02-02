@@ -5,9 +5,14 @@
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
     - Easy: 16 
     - Medium: 5
-    - Hard: 0
+    - Hard: 1
 
 ## 第四週
+
+### 2022.02.03 木 :cloud:
+
+- Hard
+    - [4.寻找两个正序数组的中位数](/code/array/0004-findMedianSortedArrays/4.m$$d)
 
 ### 2022.02.02 水 :cloud_with_rain:
 
