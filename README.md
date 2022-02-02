@@ -3,11 +3,28 @@
 
 ## 做題統計
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-    - Easy: 15 
-    - Medium: 3
+    - Easy: 16 
+    - Medium: 5
     - Hard: 0
 
+## 第四週
+
+### 2022.02.02 水 :cloud_with_rain:
+
+- Easy
+    - [2000.反转前缀字符串](/code/algorithms/2000-reversePrefix/2000.md)
+
 ## 第三週
+
+### 2022.01.29 土 :sunny:
+
+- Medium
+    - [1765.地图中的最高点](/code/algorithms/1765-highestPeak/1765.md)
+
+### 2022.01.28 金 :sunny:
+
+- Medium
+    - [1996.游戏中弱角色的数量](code/algorithms/1996-numberOfWeakCharacters/1996.md)
 
 ### 2022.01.27 木 :sunny:
 
