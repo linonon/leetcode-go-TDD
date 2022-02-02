@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"fmt"
 	. "leetcode/pkg"
 	"reflect"
 	"testing"
@@ -15,7 +16,10 @@ func Test1765(t *testing.T) {
 			want := test.Want.([][]int)
 
 			if !reflect.DeepEqual(got, want) {
-				t.Errorf("got %v, want %v\n", got, want)
+				t.Error("\ngot != errro")
+				for i := range got {
+					fmt.Println(got[i], "\t", want[i])
+				}
 			}
 		})
 	}
@@ -62,6 +66,19 @@ func Tests() []T {
 				{2, 1, 2},
 				{1, 0, 1},
 				{2, 1, 2}},
+		},
+		{
+			Num: 5,
+			Val: [][]int{
+				{0, 0},
+				{1, 1},
+				{1, 0},
+			},
+			Want: [][]int{
+				{1, 1},
+				{0, 0},
+				{0, 1},
+			},
 		},
 	}
 }
