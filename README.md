@@ -12,7 +12,7 @@
 ### 2022.02.03 木 :cloud:
 
 - Hard
-    - [4.寻找两个正序数组的中位数](/code/array/0004-findMedianSortedArrays/4.m$$d)
+    - [4.寻找两个正序数组的中位数](/code/array/0004-findMedianSortedArrays/4.md)
 
 ### 2022.02.02 水 :cloud_with_rain:
 
