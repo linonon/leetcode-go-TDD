@@ -5,9 +5,14 @@
 ## 做題統計
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-  - Easy: 16
+  - Easy: 17
   - Medium: 5
   - Hard: 1
+
+### 2022.02.09 水 :cloud:
+
+- Easy
+  - [2006.差的绝对值为 K 的数对数目](code/algorithms/2006-countKDifference/2006.md)
 
 ### 2022.02.03 木 :cloud:
 
