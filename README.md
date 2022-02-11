@@ -6,8 +6,13 @@
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
   - Easy: 17
-  - Medium: 5
+  - Medium: 6
   - Hard: 1
+
+### 2022.02.11 金 :sunny:
+
+- Medium
+  - [1447.最簡分數](code/algorithms/1447-simplifiedFractions/1447.md)
 
 ### 2022.02.09 水 :cloud:
 
