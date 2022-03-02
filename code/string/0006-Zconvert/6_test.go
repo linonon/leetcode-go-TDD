@@ -12,10 +12,10 @@ func Test6(t *testing.T) {
 		t.Run(test.Name(), func(t *testing.T) {
 			s := test.Val1.(string)
 			numRows := test.Val2.(int)
-			got := convert(s, numRows)
-			want := test.Want.(string)
+			actual := convert(s, numRows)
+			expected := test.Want.(string)
 
-			assert.Equal(t, got, want)
+			assert.Equal(t, expected, actual)
 		})
 	}
 }
@@ -40,6 +40,24 @@ func Tests() []T {
 			Val1: "A",
 			Val2: 1,
 			Want: "A",
+		},
+		{
+			Num:  4,
+			Val1: "AB",
+			Val2: 1,
+			Want: "AB",
+		},
+		{
+			Num:  5,
+			Val1: "ABC",
+			Val2: 2,
+			Want: "ACB",
+		},
+		{
+			Num:  6,
+			Val1: "ABCDE",
+			Val2: 3,
+			Want: "AEBDC",
 		},
 	}
 }
