@@ -6,8 +6,13 @@
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
   - Easy: 17
-  - Medium: 6
+  - Medium: 7
   - Hard: 1
+
+### 2022.03.02 水 :sunny:
+
+- Medium
+  - [6.Z字變換](code/algorithms/0006-Zconvert/6.md)
 
 ### 2022.02.11 金 :sunny:
 
