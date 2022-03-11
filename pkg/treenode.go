@@ -6,6 +6,7 @@ type NTreeNode struct {
 	Children []*NTreeNode
 }
 
+// ToTreeNode transforms []int to *NTreeNode.
 func ToTreeNode(s []int) *NTreeNode {
 	if len(s) <= 3 {
 		return nil

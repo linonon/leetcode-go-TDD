@@ -5,9 +5,15 @@
 ## 做題統計
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-  - Easy: 17
+  - Easy: 18
   - Medium: 7
   - Hard: 1
+
+### 2022.03.11 木 :sunny:
+
+- Easy
+  - [589.N叉樹的前續遍歷](code/algorithms/0589-peroorder/589.md)
+- `Data struct`: TreeNode
 
 ### 2022.03.02 水 :sunny:
 
