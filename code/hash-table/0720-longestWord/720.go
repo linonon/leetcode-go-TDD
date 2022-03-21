@@ -1,7 +1,5 @@
 package leetcode
 
-import "fmt"
-
 /*
  * @lc app=leetcode.cn id=720 lang=golang
  *
@@ -10,23 +8,47 @@ import "fmt"
 
 // @lc code=start
 func longestWord(words []string) (result string) {
-	m := make(map[int][]string)
-	max := 0
+	m := make(map[string]int)
 	for i := range words {
-		m[len(words[i])] = append(m[len(words[i])], string(words[i]))
-		if len(words[i]) > max {
-			max = len(words[i])
+		if _, ok := m[words[i]]; !ok {
+			m[words[i]] = 1
 		}
 	}
-	fmt.Println(m)
 
-	for i := max; i > 0; i-- {
-		for _, world := range m[i] {
-			if _, ok := m[i]; !ok {
-				continue
+	result = ""
+	for _, w := range words {
+		isVaild := true
+
+		if len(w) >= len(result) {
+			if len(w) == len(result) {
+				for i := range w {
+					if w[i] > result[i] {
+						isVaild = false
+						break
+					} else if w[i] < result[i] {
+						break
+					}
+				}
 			}
+
+			if isVaild {
+				for i := 0; i < len(w)-1; i++ {
+					s := string(w[:i+1])
+					if _, ok := m[s]; !ok {
+						isVaild = false
+						break
+					}
+				}
+			}
+		} else {
+			isVaild = false
+		}
+
+		if isVaild {
+			result = w
 		}
 	}
+
 	return
 }
 

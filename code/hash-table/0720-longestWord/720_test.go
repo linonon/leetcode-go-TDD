@@ -32,5 +32,20 @@ func Tests() []T {
 			Val:  []string{"a", "banana", "app", "appl", "ap", "apply", "apple"},
 			Want: "apple",
 		},
+		{
+			Num:  3,
+			Val:  []string{"m", "mo", "moc", "moch", "mocha", "l", "la", "lat", "latt", "latte", "c", "ca", "cat"},
+			Want: "latte",
+		},
+		{
+			Num:  4,
+			Val:  []string{"t", "ti", "tig", "tige", "tiger", "e", "en", "eng", "engl", "engli", "englis", "english", "h", "hi", "his", "hist", "histo", "histor", "history"},
+			Want: "english",
+		},
+		{
+			Num:  5,
+			Val:  []string{"yo", "ew", "fc", "zrc", "yodn", "fcm", "qm", "qmo", "fcmz", "z", "ewq", "yod", "ewqz", "y"},
+			Want: "yodn",
+		},
 	}
 }
