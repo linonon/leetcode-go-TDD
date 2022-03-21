@@ -8,18 +8,17 @@ package leetcode
 
 // @lc code=start
 func longestWord(words []string) (result string) {
-	m := make(map[string]int)
+	m := make(map[string]bool)
 	for i := range words {
 		if _, ok := m[words[i]]; !ok {
-			m[words[i]] = 1
+			m[words[i]] = true
 		}
 	}
 
-	result = ""
 	for _, w := range words {
-		isVaild := true
-
 		if len(w) >= len(result) {
+			isVaild := true
+
 			if len(w) == len(result) {
 				for i := range w {
 					if w[i] > result[i] {
@@ -32,20 +31,16 @@ func longestWord(words []string) (result string) {
 			}
 
 			if isVaild {
-				for i := 0; i < len(w)-1; i++ {
-					s := string(w[:i+1])
-					if _, ok := m[s]; !ok {
-						isVaild = false
+				for i := 0; i < len(w); i++ {
+					if i == len(w)-1 {
+						result = w
+						break
+					}
+					if _, ok := m[string(w[:i+1])]; !ok {
 						break
 					}
 				}
 			}
-		} else {
-			isVaild = false
-		}
-
-		if isVaild {
-			result = w
 		}
 	}
 

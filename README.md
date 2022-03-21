@@ -5,9 +5,14 @@
 ## 做題統計
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-  - Easy: 18
+  - Easy: 19
   - Medium: 7
   - Hard: 1
+
+### 2022.03.21 木 :sun_behind_rain_cloud:
+
+- Easy
+  - [720.詞典中最長的單詞](code/hash-table/0720-longestWord/720.md)
 
 ### 2022.03.11 木 :sunny:
 
