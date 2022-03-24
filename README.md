@@ -2,12 +2,19 @@
 
 `没事做，就做做题咯`
 
+開始日期: 2022.01.10
+
 ## 做題統計
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
-  - Easy: 19
+  - Easy: 20
   - Medium: 7
   - Hard: 1
+
+### 2022.03.24 木 :sun_behind_rain_cloud:
+
+- Easy
+  - [661.圖片平滑器](code/array/0661-imageSmoother/661.md)
 
 ### 2022.03.21 木 :sun_behind_rain_cloud:
 
