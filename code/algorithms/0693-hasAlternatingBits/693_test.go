@@ -11,7 +11,6 @@ func Test_hasAlternatingBits(t *testing.T) {
 		args    args
 		wantHas bool
 	}{
-		// TODO: Add test cases.
 		{
 			name:    "1",
 			args:    args{n: 5},
