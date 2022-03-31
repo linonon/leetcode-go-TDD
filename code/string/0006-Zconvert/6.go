@@ -2,7 +2,7 @@ package leetcode
 
 /*
  * @lc app=leetcode.cn id=6 lang=golang
- *
+ * test
  * [6] Z 字形变换
  */
 
