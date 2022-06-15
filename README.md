@@ -8,8 +8,13 @@
 
 - 難度分配： Easy : Medium : Hard == 5 : 3 : 1
   - Easy: 21
-  - Medium: 7
+  - Medium: 8
   - Hard: 1
+
+### 2022.06.15 水 🌧️
+
+- Medium
+  - [498.對角線遍歷](code/algorithms/498/498.md)
 
 ### 2022.03.28 月 :sun_behind_rain_cloud:
 

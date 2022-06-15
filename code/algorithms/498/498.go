@@ -19,28 +19,36 @@ func findDiagonalOrder(mat [][]int) []int {
 	for y < m && x < n && count != n*m {
 		result = append(result, mat[y][x])
 		if !reverse {
-			x++
-			y--
-			if y < 0 {
+			if x+1 < n && y-1 < 0 {
+				// 下個點在右邊
+				x++
 				y = 0
 				reverse = true
-			}
-			if x == n {
-				y++
+			} else if x+1 == n {
+				// 下個點在下面
 				x = n - 1
+				y++
 				reverse = true
+			} else {
+				// 正常情況, 右上走
+				x++
+				y--
 			}
 		} else {
-			x--
-			y++
-			if x < 0 {
+			if y+1 < m && x-1 < 0 {
+				// 下個點在下邊
+				y++
 				x = 0
 				reverse = false
-			}
-			if y == m {
-				x += 2
+			} else if y+1 == m {
+				// 下個點在右邊
 				y = m - 1
+				x++
 				reverse = false
+			} else {
+				// 正常情況, 左下走
+				x--
+				y++
 			}
 		}
 		count++

@@ -35,6 +35,13 @@ func Test_findDiagonalOrder(t *testing.T) {
 			},
 			want: []int{1, 2, 4, 7, 5, 8},
 		},
+		{
+			name: "[[1,2,3]",
+			args: args{
+				[][]int{{1, 2, 3}},
+			},
+			want: []int{1, 2, 3},
+		},
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
