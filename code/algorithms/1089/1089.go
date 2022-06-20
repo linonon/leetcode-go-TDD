@@ -8,25 +8,25 @@ package leetcode
 
 // @lc code=start
 func duplicateZeros(arr []int) {
-	n := len(arr)
-	var tail []int
-	for i := 0; i < n; i++ {
-		if len(tail)-2 >= 0 {
-			for j := 0; j < len(tail)-1; j++ {
-				if j+i == n {
-					break
-				}
-				arr[j+i] = tail[j]
-			}
-			tail = tail[:0]
+	zero := 0
+	for _, i := range arr {
+		if i == 0 {
+			zero++
 		}
+	}
+	for i := len(arr) - 1; i >= 0; i-- {
 		if arr[i] == 0 {
-			if i+1 == n {
-				break
+			if zero+i < len(arr) {
+				arr[zero+i] = 0
 			}
-			tail = append([]int{}, arr[i+1:]...)
-			arr[i+1] = 0
-			i++
+			if zero-1+i < len(arr) {
+				arr[zero-1+i] = 0
+			}
+			zero--
+		} else {
+			if zero+i < len(arr) {
+				arr[zero+i] = arr[i]
+			}
 		}
 	}
 }
