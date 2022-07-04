@@ -11,6 +11,11 @@
   - Medium: 8
   - Hard: 1
 
+### 2022.07.04 月 :sun_behind_rain_cloud:
+
+- Easy
+  - [1200.最小絕對差](code/hash-table/1200/1200.md)
+
 ### 2022.06.17
 
 - Easy
