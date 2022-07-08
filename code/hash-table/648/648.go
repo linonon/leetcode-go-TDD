@@ -1,8 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
-	"sort"
 	"strings"
 )
 
@@ -14,25 +12,30 @@ import (
 
 // @lc code=start
 func replaceWords(dictionary []string, sentence string) string {
-	ss := strings.Split(sentence, " ")
-	sort.Slice(dictionary, func(i, j int) bool {
-		if len(dictionary[i]) < len(dictionary[j]) {
-			return true
-		}
-		return false
-	})
+	bronkenString := strings.Fields(sentence)
+	var result []string
+	var dicVal string
 
-	fmt.Println(dictionary)
-	for i, s := range ss {
-		for _, keyword := range dictionary {
-			if strings.Contains(s, keyword) {
-				ss[i] = keyword
-				break
+	for _, val := range bronkenString {
+		var tempRes string
+		for _, dicVal = range dictionary {
+			if strings.HasPrefix(val, dicVal) {
+				if len(tempRes) == 0 {
+					tempRes = dicVal
+				} else if len(dicVal) < len(tempRes) {
+					tempRes = dicVal
+				}
 			}
+		}
+
+		if len(tempRes) > 0 {
+			result = append(result, tempRes)
+		} else {
+			result = append(result, val)
 		}
 	}
 
-	return strings.Join(ss, " ")
+	return strings.Join(result, " ")
 }
 
 // @lc code=end
