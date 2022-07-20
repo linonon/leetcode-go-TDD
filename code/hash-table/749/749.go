@@ -92,3 +92,5 @@ func containVirus(isInfected [][]int) (ans int) {
 }
 
 // @lc code=end
+
+// Test
